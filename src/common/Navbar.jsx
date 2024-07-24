@@ -39,7 +39,7 @@ function Navbar() {
         </a>
         <a
           className="text-base font-semibold tracking-wide ml-10 hover:text-sky-700"
-          href="#"
+          href="#services"
         >
           SERVICES
         </a>
@@ -86,7 +86,7 @@ function Navbar() {
           </a>
         </li>
         <li className="py-3 px-4 border-t">
-          <a className="navlink hover:text-sky-700" href="#">
+          <a className="navlink hover:text-sky-700" href="#services">
             SERVICES
           </a>
         </li>
@@ -98,6 +98,22 @@ function Navbar() {
         <li className="py-3 px-4 border-t">
           <a className="navlink hover:text-sky-700" href="#">
             CONTACT
+          </a>
+        </li>
+        <li className="flex justify-center content-center py-3 px-4 border-t">
+          <a
+            href="https://linkedin.com/in/mhamza7265"
+            target="_blank"
+            className="block p-5 hover:bg-slate-100"
+          >
+            <i className="fa-brands fa-linkedin text-3xl"></i>
+          </a>
+          <a
+            href="https://github.com/mhamza7265"
+            target="_blank"
+            className="block p-5 hover:bg-slate-100"
+          >
+            <i className="fa-brands fa-github text-3xl"></i>
           </a>
         </li>
       </ul>

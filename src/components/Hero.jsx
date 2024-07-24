@@ -1,4 +1,6 @@
 import scrolling from "../assets/images/scrolling.gif";
+import DownloadBtn from "../common/DownloadBtn";
+// import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -7,7 +9,7 @@ function Hero() {
         <h1 className="text-4xl sm:text-5xl font-extrabold text-center text-wrap sm:text-nowrap leading-relaxed tracking-wide">
           {`HELLO, I'M MUHAMMAD HAMZA`}
         </h1>
-        <h5 className="text-center text-lg sm:text-2xl  mt-10 leading-relaxed">
+        <h5 className="text-center text-lg sm:text-2xl mt-10 leading-relaxed text-slate-700">
           An Experienced Full-Stack Web Developer Specializing In Creating
           Dynamic Websites and Powerful Web Applications that bring your ideas
           to life from Front-end to Back-end
@@ -33,6 +35,12 @@ function Hero() {
         className="scroll-gif hidden sm:block"
         src={scrolling}
         alt="scroll"
+      />
+      <DownloadBtn
+        text="RESUME"
+        link="../../public/resume/Muhammad Hamza Hanif (CV) .pdf"
+        download="Muhammad Hamza Hanif (CV).pdf"
+        className="absolute sm:top-3/4"
       />
     </section>
   );
