@@ -4,7 +4,7 @@ import Heading from "../common/Heading";
 function Services() {
   return (
     <section id="services" className="services">
-      <Heading text="Services" />
+      <Heading text="SERVICES" />
       <div className="block sm:flex justify-center mt-20">
         <Card
           icon="fa-solid fa-code"

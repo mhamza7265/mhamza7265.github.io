@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section className="hero-image relative">
       <div className="hero-content">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-center text-wrap sm:text-nowrap leading-relaxed tracking-wide">
+        <h1 className="title-text text-4xl sm:text-5xl font-extrabold text-center text-wrap sm:text-nowrap leading-relaxed tracking-wide">
           {`HELLO, I'M MUHAMMAD HAMZA`}
         </h1>
         <h5 className="text-center text-lg sm:text-2xl mt-10 leading-relaxed text-slate-700">
@@ -38,7 +38,7 @@ function Hero() {
       />
       <DownloadBtn
         text="RESUME"
-        link="../../public/resume/Muhammad Hamza Hanif (CV) .pdf"
+        link="../../resume/Muhammad Hamza Hanif (CV) .pdf"
         download="Muhammad Hamza Hanif (CV).pdf"
         className="absolute sm:top-3/4"
       />

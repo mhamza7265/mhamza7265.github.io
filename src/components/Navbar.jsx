@@ -45,13 +45,13 @@ function Navbar() {
         </a>
         <a
           className="text-base font-semibold tracking-wide ml-10 hover:text-sky-700"
-          href="#"
+          href="#projects"
         >
           PROJECTS
         </a>
         <a
           className="text-base font-semibold tracking-wide ml-10 hover:text-sky-700"
-          href="#"
+          href="#contact"
         >
           CONTACT
         </a>
@@ -91,12 +91,12 @@ function Navbar() {
           </a>
         </li>
         <li className="py-3 px-4 border-t">
-          <a className="navlink hover:text-sky-700" href="#">
+          <a className="navlink hover:text-sky-700" href="#projects">
             PROJECTS
           </a>
         </li>
         <li className="py-3 px-4 border-t">
-          <a className="navlink hover:text-sky-700" href="#">
+          <a className="navlink hover:text-sky-700" href="#contact">
             CONTACT
           </a>
         </li>

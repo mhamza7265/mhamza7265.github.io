@@ -4,6 +4,12 @@
   height: 520px;
 }
 
+.contact {
+  background-image: url("./assets/images/bg-pattern-2.svg");
+  background-size: cover;
+  min-height: 520px;
+}
+
 .hero-content {
   position: absolute;
   top: 50%;
@@ -86,7 +92,7 @@
 }
 
 .download-btn {
-  color: #0369a1;
+  color: #334155;
   padding: 3px 10px;
   display: flex;
   justify-content: space-between;
@@ -104,18 +110,49 @@
 }
 
 .download-btn:hover {
-  border-color: #0369a1;
+  border-color: #334155;
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.144),
     rgba(255, 255, 255, 0.247),
     rgba(255, 255, 255, 0.39)
   );
-  box-shadow: 0 6px #0369a1;
+  box-shadow: 0 6px #334155;
   transform: translateY(-6px);
 }
 
 .download-btn:active {
   transform: translateY(2px);
   box-shadow: none;
+}
+
+.title-text {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.service-card {
+  transition: 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  scale: 1.05;
 }
