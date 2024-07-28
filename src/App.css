@@ -208,3 +208,15 @@
 .checkbox:checked + .checkbox-label .ball {
   transform: translateX(24px);
 }
+
+.scroll-top {
+  top: 90%;
+  right: 2%;
+  transition: all 0.1s ease-in-out;
+}
+
+@media (min-width: 640px) {
+  .scroll-top {
+    top: 85%;
+  }
+}
