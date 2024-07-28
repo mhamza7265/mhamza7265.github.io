@@ -48,7 +48,7 @@ function Contact() {
     <section id="contact" className="contact pt-28  mt-28 pb-28">
       <Heading text="CONTACT" color="#000" />
       <form
-        className="p-10 bg-white dark:bg-gray-800 w-full sm:w-2/4 rounded shadow-xl mx-auto mt-20 relative"
+        className="p-10 bg-white dark:bg-gray-800 w-11/12 sm:w-2/4 rounded shadow-xl mx-auto mt-20 relative"
         ref={form}
         onSubmit={handleEmailSubmit}
       >
