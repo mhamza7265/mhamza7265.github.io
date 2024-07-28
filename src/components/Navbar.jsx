@@ -81,12 +81,12 @@ function Navbar() {
           }`}
           onClick={handleNavManuClick}
         >
-          <li className="py-3 px-4 border-t">
+          <li className="py-3 px-4 border-t dark:border-slate-500">
             <a className="navlink hover:text-sky-700 dark:text-white" href="/#">
               HOME
             </a>
           </li>
-          <li className="py-3 px-4 border-t">
+          <li className="py-3 px-4 border-t dark:border-slate-500">
             <a
               className="navlink hover:text-sky-700 dark:text-white"
               href="/#about"
@@ -94,7 +94,7 @@ function Navbar() {
               ABOUT
             </a>
           </li>
-          <li className="py-3 px-4 border-t">
+          <li className="py-3 px-4 border-t dark:border-slate-500">
             <a
               className="navlink hover:text-sky-700 dark:text-white"
               href="/#services"
@@ -102,7 +102,7 @@ function Navbar() {
               SERVICES
             </a>
           </li>
-          <li className="py-3 px-4 border-t">
+          <li className="py-3 px-4 border-t dark:border-slate-500">
             <a
               className="navlink hover:text-sky-700 dark:text-white"
               href="/#projects"
@@ -110,7 +110,7 @@ function Navbar() {
               PROJECTS
             </a>
           </li>
-          <li className="py-3 px-4 border-t">
+          <li className="py-3 px-4 border-t dark:border-slate-500">
             <a
               className="navlink hover:text-sky-700 dark:text-white"
               href="/#contact"
@@ -118,7 +118,7 @@ function Navbar() {
               CONTACT
             </a>
           </li>
-          <li className="flex justify-center content-center py-3 px-4 border-t">
+          <li className="flex justify-center content-center py-3 px-4 border-t dark:border-slate-500">
             <a
               href="https://linkedin.com/in/mhamza7265"
               target="_blank"
