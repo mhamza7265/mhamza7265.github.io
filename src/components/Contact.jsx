@@ -46,14 +46,14 @@ function Contact() {
 
   return (
     <section id="contact" className="contact pt-28  mt-28 pb-28">
-      <Heading text="CONTACT" />
+      <Heading text="CONTACT" color="#000" />
       <form
-        className="p-10 bg-white w-full sm:w-2/4 rounded shadow-xl mx-auto mt-20 relative"
+        className="p-10 bg-white dark:bg-gray-800 w-full sm:w-2/4 rounded shadow-xl mx-auto mt-20 relative"
         ref={form}
         onSubmit={handleEmailSubmit}
       >
         <div className="mt-8">
-          <label htmlFor="name" className="text-slate-500">
+          <label htmlFor="name" className="text-slate-500 dark:text-slate-200">
             Name
           </label>
           <input
@@ -65,7 +65,7 @@ function Contact() {
           />
         </div>
         <div className="mt-12">
-          <label htmlFor="email" className="text-slate-500">
+          <label htmlFor="email" className="text-slate-500 dark:text-slate-200">
             Email
           </label>
           <input
@@ -77,7 +77,10 @@ function Contact() {
           />
         </div>
         <div className="mt-12 mb-8">
-          <label htmlFor="message" className="text-slate-500">
+          <label
+            htmlFor="message"
+            className="text-slate-500 dark:text-slate-200"
+          >
             Message
           </label>
           <textarea

@@ -15,20 +15,20 @@ function Hero() {
           to life from Front-end to Back-end
         </h5>
       </div>
-      <div className="links bg-white absolute p-2 shadow rounded-md hidden sm:block">
+      <div className="links bg-white dark:bg-gray-800 absolute p-2 shadow rounded-md hidden sm:block">
         <a
           href="https://linkedin.com/in/mhamza7265"
           target="_blank"
-          className="block p-5 hover:bg-slate-100"
+          className="block p-5 hover:bg-slate-100 dark:hover:bg-slate-700"
         >
-          <i className="fa-brands fa-linkedin text-3xl"></i>
+          <i className="fa-brands fa-linkedin text-3xl dark:text-slate-200"></i>
         </a>
         <a
           href="https://github.com/mhamza7265"
           target="_blank"
-          className="block p-5 hover:bg-slate-100"
+          className="block p-5 hover:bg-slate-100 dark:hover:bg-slate-700"
         >
-          <i className="fa-brands fa-github text-3xl"></i>
+          <i className="fa-brands fa-github text-3xl dark:text-slate-200"></i>
         </a>
       </div>
       <img

@@ -5,7 +5,7 @@ function About() {
   return (
     <section id="about" className="about py-28">
       <Heading text="ABOUT ME" />
-      <p className="my-20 w-3/4 text-center mx-auto leading-relaxed tracking-wide text-slate-600">
+      <p className="my-20 w-3/4 text-center mx-auto leading-relaxed tracking-wide text-slate-600 dark:text-slate-200">
         {`I am a full-stack web developer with a strong emphasis on front-end design. I
         specialize in building clean, intuitive, and visually striking user
         interfaces while also managing the back-end to ensure everything runs
@@ -15,7 +15,7 @@ function About() {
         ideas to life!`}
       </p>
       <Heading2 text="MY SKILLS & TECH STACK" />
-      <div className="stack flex flex-wrap w-full sm:w-max justify-items-center justify-center">
+      <div className="stack flex flex-wrap w-full sm:w-max justify-items-center justify-center bg-zinc-100 dark:bg-gray-800">
         <i className="devicon-html5-plain colored"></i>
         <i className="devicon-css3-plain colored"></i>
         <i className="devicon-javascript-plain colored"></i>

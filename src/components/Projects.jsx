@@ -13,22 +13,19 @@ function Projects() {
           img={ecommerce}
           alt="ecommerce"
           title="Ecommerce Platform"
-          btn1="javascript:void(0)"
-          btn2="https://github.com/mhamza7265/Ecommerce-client"
+          btn1="/project/1"
         />
         <ProjectCard
           img={chat}
           alt="chat-app"
           title="Chat Application"
-          btn1="javascript:void(0)"
-          btn2="https://github.com/mhamza7265/Chat-App-Client"
+          btn1="/project/2"
         />
         <ProjectCard
           img={biab}
           alt="buiness in a box"
           title="BIAB (AI Business Tool)"
-          btn1="https://businessinabox.ai/"
-          btn2="javascript:void(0)"
+          btn1="/project/3"
         />
       </div>
     </section>
