@@ -1,8 +1,9 @@
 import myPic from "../assets/images/me.jpg";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function Navbar() {
   const [mobileMenuIsDisplayed, setMobileMenuIsDisplayed] = useState(false);
+  const scrollPos = useRef();
 
   const handleNavManuClick = (e) => {
     if (e.target.classList.contains("navlink")) {
@@ -13,6 +14,25 @@ function Navbar() {
   const handleDarkModeChange = () => {
     document.body.classList.toggle("dark");
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowScroll = document.documentElement.scrollTop;
+      const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const scrollPercentage = (windowScroll / scrollHeight) * 100;
+      if (scrollPos.current) {
+        scrollPos.current.style.width = scrollPercentage + "%";
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
@@ -149,6 +169,10 @@ function Navbar() {
           </label>
         </div>
       </div>
+      <div
+        className="scroll-pos absolute bottom-0 left-0 border-b-4 border-sky-700 h-1 transition-all duration-100 ease-in-out"
+        ref={scrollPos}
+      ></div>
     </nav>
   );
 }

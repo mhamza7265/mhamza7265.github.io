@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     image: ecommerce,
     name: "Ecommerce App",
-    github: "https://github.com/mhamza7265/Ecommerce-client",
+    github: "https://github.com/mhamza7265/eCommerce-App",
     live: "",
     detail: [
       "eCommerce Platform, a full-featured online shopping platform developed using the MERN stack (MongoDB, Express.js, React, and Node.js).",
@@ -29,7 +29,7 @@ const projects = [
     id: 2,
     image: chat,
     name: "Chat App",
-    github: "https://github.com/mhamza7265/Chat-App-Client",
+    github: "https://github.com/mhamza7265/Chat-App",
     live: "",
     detail: [
       "Real-time chat application, built with the powerful Socket.io library to deliver seamless and instant communication.",
