@@ -1,8 +1,28 @@
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 function ProjectCard({ img, alt, title, btn1 }) {
+  const btnDiv = useRef();
+  const handleHover = () => {
+    btnDiv.current.style.display = "block";
+    setTimeout(() => {
+      btnDiv.current.style.opacity = 1;
+    }, 100);
+  };
+
+  const handleHoverEnd = () => {
+    btnDiv.current.style.opacity = 0;
+    setTimeout(() => {
+      btnDiv.current.style.display = "none";
+    }, 100);
+  };
+
   return (
-    <div className="project-card mt-10 sm:mt-0 w-11/12 sm:w-3/4 mx-auto sm:mx-8 max-w-sm p-1 pb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 shadow-lg">
+    <div
+      className="project-card mt-10 sm:mt-0 w-11/12 sm:w-3/4 mx-auto sm:mx-8 max-w-sm p-1 pb-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 shadow-lg relative"
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHoverEnd}
+    >
       <div className="flex justify-left items-center pb-0 overflow-hidden">
         <img
           src={img}
@@ -13,13 +33,18 @@ function ProjectCard({ img, alt, title, btn1 }) {
       <p className="font-normal text-lg font-bold text-slate-500 dark:text-slate-100 dark:text-gray-400 pt-5 text-center">
         {title}
       </p>
-      <div className="flex justify-center items-center mt-5">
-        <Link
-          to={btn1}
-          className="text-white bg-sky-700 hover:bg-sky-900 border border-sky-700 focus:outline-none focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-sky-800 dark:hover:bg-sky-700 dark:focus:ring-sky-700 dark:border-sky-700"
-        >
-          EXPLORE
-        </Link>
+      <div
+        className="project-card-btn-container absolute bg-slate-700 dark:bg-slate-600 absolute transition-all duration-500 ease-in-out rounded-lg"
+        ref={btnDiv}
+      >
+        <div className="w-full h-full relative">
+          <Link
+            to={btn1}
+            className="project-card-btn text-white bg-sky-700 hover:bg-sky-900 border border-sky-700 focus:outline-none focus:ring-4 focus:ring-sky-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-sky-800 dark:hover:bg-sky-700 dark:focus:ring-sky-700 dark:border-sky-700"
+          >
+            EXPLORE
+          </Link>
+        </div>
       </div>
     </div>
   );
