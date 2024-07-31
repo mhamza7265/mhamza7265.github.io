@@ -43,11 +43,13 @@ function Navbar() {
         zIndex: 9999,
       }}
     >
-      <div className="flex justify-between items-center">
-        <img className="rounded-full w-12 h-12 mr-2" src={myPic} alt="logo" />
-        <p className="text-base font-semibold tracking-wide dark:text-white">
-          MUHAMMAD HAMZA
-        </p>
+      <div className="">
+        <a href="/#" className="flex justify-between items-center">
+          <img className="rounded-full w-12 h-12 mr-2" src={myPic} alt="logo" />
+          <p className="text-base font-semibold tracking-wide dark:text-white">
+            MUHAMMAD HAMZA
+          </p>
+        </a>
       </div>
       <div className="navbar flex justify-right items-center">
         <div className="hidden lg:block md:block sm:block xl:block">
